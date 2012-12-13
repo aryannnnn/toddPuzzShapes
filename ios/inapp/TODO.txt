@@ -1,0 +1,36 @@
+public static string greyscaleProductId = "com.xamarin.storekit.testing.greyscale",
+			   			 sepiaProductId = "com.xamarin.storekit.testing.sepia";
+			   
+InAppPurchaseManager iap;
+List<string> products;
+
+//optional ?  (il LocalizedTitle e LocalizedDescription si prendono dal priceObserver)
+// priceObserver   setup the observer to wait for prices to come back from StoreKit <- AppStore
+// requestObserver  for failed request
+NSObject priceObserver, requestObserver;
+
+// two products for sale on this page
+products = new List<string>() {greyscaleProductId, sepiaProductId};
+iap = new InAppPurchaseManager();
+
+// initiate payment
+iap.PurchaseProduct (greyscaleProductId);
+
+// initiate payment
+iap.PurchaseProduct (sepiaProductId);
+
+restoreButton.TouchUpInside += (sender, e) => {
+				iap.Restore();
+			};
+			
+			
+// only if we can make payments, request the prices
+if (iap.CanMakePayments()) {
+	// now go get prices, if we don't have them already
+	if (!pricesLoaded)
+		iap.RequestProductData(products); // async request via StoreKit -> App Store
+} else {
+	// can't make payments (purchases turned off in Settings?)
+	greyscaleButton.SetTitle ("AppStore disabled", UIControlState.Disabled);
+	sepiaButton.SetTitle ("AppStore disabled", UIControlState.Disabled);
+}

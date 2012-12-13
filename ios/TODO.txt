@@ -1,0 +1,15 @@
+-create assets sym link to 
+../core/src/main/java/co/romesoft/resources
+
+ln -s ../core/src/main/java/co/romesoft/resources assets
+
+e aggiungere tutti gli assets dentro .csproj
+
+<ItemGroup>
+    <Content Include="touch-icon-57x57.png" />
+    <Content Include="assets\images\bg.png" />
+    ....
+</ItemGroup>
+
+
+-conf ikvm-monotouch in .m2

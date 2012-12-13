@@ -1,0 +1,33 @@
+-sound start?
+-pulsanti next/start
+-bg left bar
+-aggiungere vehicles sound quando prendo il draggable
+-fix: i camion vanno anche sulla parte sinistra grigia a 320x240
+
+-risalvare immagini off con paint OK
+
+-aggiungere try catch  AndroidAudio.java /  AndroidCompressedSound.java   OK
+@Override
+  void onDestroy() {
+	  
+    try {
+	......
+	} catch (Exception e) {
+		
+	}
+    
+  }
+  
+  
+-back in 1.5 viene intercettato e chiude ?  OK
+		@Override
+ 		 public void onBackPressed() {
+    		moveTaskToBack(false);
+ 		 }
+  
+  
+-ads in 1.4 / 1.5-SNAP  OK
+	non far sovrapporre ads con droppable  OK
+
+
+  
