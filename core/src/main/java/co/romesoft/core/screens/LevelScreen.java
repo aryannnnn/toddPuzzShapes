@@ -33,7 +33,7 @@ public class LevelScreen extends Screen implements Keyboard.Listener {
 
 	private ScreenStack _screens;
 	
-	public static final int NUM_LEVELS = 15; //19 FULL //15 FREE
+	public static final int NUM_LEVELS = 1; //19 FULL //15 FREE
 	
 	private static int MAX_DRAG_ITEMS = 3;
 	private int num_draggable;

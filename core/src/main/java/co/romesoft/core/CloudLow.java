@@ -55,6 +55,7 @@ public class CloudLow {
 		});
 	}
 	
+	private float angleStar;
 	
 	public void update(float delta) {
 		 cloudX += delta * 0.033f*Launcher.multHeight;
@@ -64,6 +65,10 @@ public class CloudLow {
 		    	cloudX = -il.scaledWidth();
 		      
 		    }
+		    
+		    angleStar += -(delta*0.25);
+			il.setRotation(angleStar);
+			
 	}
 	
 	public void destroy() {
