@@ -23,7 +23,7 @@ public class SuccessLevelLayer {
 	
 	private static final int TIME_BEFORE_FADE_MS = 7000;
 
-	private static final int NUM_IMAGES_SUCCESS = 3;
+	private static final int NUM_IMAGES_SUCCESS = 4;
 
 	private static final int NUMB_ELEMS = 12;
 
@@ -69,9 +69,12 @@ public class SuccessLevelLayer {
 				starImage = assets().getImage("images/sun.png");
 				break;
 			case 2:
-				starImage = assets().getImage("images/tire.png");
+				starImage = assets().getImage("images/balloon.png");
 				break;
 			case 3:
+				starImage = assets().getImage("images/ball.png");
+				break;
+			case 4:
 				starImage = assets().getImage("images/bub.png");
 				break;
 			default:
@@ -105,7 +108,7 @@ public class SuccessLevelLayer {
 						
 						dl.setTranslation(dist*i,(float)Math.random()*Launcher.height);
 						dl.setScale(mult*Launcher.multHeight);
-						if (latestImageType == 3) {
+						if (latestImageType == 4) {
 							dl.setAlpha(0.8f);
 						}
 						
@@ -118,7 +121,7 @@ public class SuccessLevelLayer {
 							@Override
 							public void onPointerStart(Event event) {
 								starsFalling.add(dl);
-								if (latestImageType == 3) {
+								if (latestImageType == 4 || latestImageType == 2) {
 									Art.playSound(Art.BUB_POP);
 								}
 							}
@@ -173,11 +176,13 @@ public class SuccessLevelLayer {
 		angleStar += delta*0.25;
 		  
 		for (ImageLayer star : starsLayer) {
-			star.setRotation(angleStar);
+			if (latestImageType != 2) {
+				star.setRotation(angleStar);
+			}
 		}
 		
 		for (ImageLayer star : starsFalling) {
-			if (latestImageType == 3) {
+			if (latestImageType == 4 || latestImageType == 2) {
 				//bub
 				if (!star.destroyed()) {
 					star.destroy();

@@ -155,7 +155,7 @@ public class LevelScreen extends Screen implements Keyboard.Listener {
 		    	
 		    	if (i > TRY_TO_PLACE/2) {
 			    	scaleVal = DropZone.SCALE_VAL_DEFAULT - (DropZone.SCALE_VAL_DEFAULT*(float)i/(float)TRY_TO_PLACE);
-			    	if (scaleVal<0.3) scaleVal=0.3f;
+			    	if (scaleVal<0.5) scaleVal=0.5f;
 		    	}
 			}
 			if (notOverlap) {
@@ -195,7 +195,7 @@ public class LevelScreen extends Screen implements Keyboard.Listener {
 		    	
 		    	if (i > TRY_TO_PLACE/2) {
 			    	scaleVal = DropZone.SCALE_VAL_DEFAULT - (DropZone.SCALE_VAL_DEFAULT*(float)i/(float)TRY_TO_PLACE);
-			    	if (scaleVal<0.3) scaleVal=0.3f;
+			    	if (scaleVal<0.5) scaleVal=0.5f;
 		    	}
 			}
 			if (notOverlap) {
@@ -242,7 +242,7 @@ public class LevelScreen extends Screen implements Keyboard.Listener {
 			    	
 			    	if (i > TRY_TO_PLACE/2) {
 				    	scaleVal = DropZone.SCALE_VAL_DEFAULT - (DropZone.SCALE_VAL_DEFAULT*(float)i/(float)TRY_TO_PLACE);
-				    	if (scaleVal<0.3) scaleVal=0.3f;
+				    	if (scaleVal<0.5) scaleVal=0.5f;
 			    	}
 				}
 				if (notOverlap) {
