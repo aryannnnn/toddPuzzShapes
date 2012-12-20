@@ -6,6 +6,63 @@ import co.romesoft.core.Art.type;
 public class DragSounds {
 
 	public static type fromImageToType(final String image) {
+		if (image.contains("/2a.png")||image.contains("/3b.png")||image.contains("/18a.png")
+				||image.contains("/16c.png")) {
+			return type.BABY;
+		}
+		
+		if (image.contains("/6c.png")) {
+			return type.GUITAR;
+		}
+		
+		if (image.contains("/7c.png")||image.contains("/11a.png")||image.contains("/12c.png")) {
+			return type.CAR;
+		}
+		
+		if (image.contains("/8a.png")) {
+			return type.CHICKEN;
+		}
+		
+		if (image.contains("/8c.png")) {
+			return type.PLANE;
+		}
+		
+		if (image.contains("/9b.png")||image.contains("/10c.png")) {
+			return type.DOG;
+		}
+		
+		if (image.contains("/9c.png")) {
+			return type.BOAT;
+		}
+		
+		if (image.contains("/11c.png")||image.contains("/19c.png")) {
+			return type.DRUMS;
+		}
+		
+		if (image.contains("/12b.png")||image.contains("/14b.png")) {
+			return type.TRUCK;
+		}
+		
+		if (image.contains("/13c.png")||image.contains("/15b.png")) {
+			return type.TRAIN;
+		}
+		
+		if (image.contains("/14a.png")) {
+			return type.HELI;
+		}
+		
+		if (image.contains("/16a.png")) {
+			return type.HORSE;
+		}
+		
+		
+		if (image.contains("/20c.png")||image.contains("/17a.png")) {
+			return type.BIPLANE;
+		}
+		
+		if (image.contains("/17b.png")||image.contains("/2b.png")||image.contains("/8b.png")) {
+			return type.BALL;
+		}
 		/*
 		if (image.contains("/1a.png")||image.contains("/6c.png")) {
 			return type.BIKE;

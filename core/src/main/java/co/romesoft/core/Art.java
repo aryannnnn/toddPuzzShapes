@@ -250,11 +250,35 @@ public class Art
 		}
     }
     
-    public enum type { RANDOM, CAR, TRUCK, BIKE, BOAT, BUS, EXCA, TRACTOR, VAN, TRAIN, MULETTO, HELI, PLANE, MOTO,
+    public enum type {BIPLANE,BALL,DRUMS,HORSE,DOG, BABY,CHICKEN,GUITAR, RANDOM, CAR, TRUCK, BIKE, BOAT, BUS, EXCA, TRACTOR, VAN, TRAIN, MULETTO, HELI, PLANE, MOTO,
 		 FIRETRUCK, POLICE, AMBULANCE, RACE_CAR }
    
 	public static void playVehicleSound(type t) {
 		switch (t) {
+			case BIPLANE:
+				assets().getSound("snd/biplane");
+				break;
+			case BALL:
+				assets().getSound("snd/ball");
+				break;
+			case DRUMS:
+				assets().getSound("snd/drums");
+				break;
+			case HORSE:
+				assets().getSound("snd/horse");
+				break;
+			case DOG:
+				assets().getSound("snd/dog");
+				break;
+			case CHICKEN:
+				assets().getSound("snd/chicken");
+				break;
+			case GUITAR:
+				assets().getSound("snd/guitar");
+				break;
+			case BABY:
+				assets().getSound("snd/baby");
+				break;
 			case RANDOM:
 				playRandomSpring();
 				break;
