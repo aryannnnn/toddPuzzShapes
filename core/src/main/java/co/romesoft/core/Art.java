@@ -94,7 +94,7 @@ public class Art
         }
     }
     
-    public static Sound[] samples = new Sound[300];
+    //public static Sound[] samples = new Sound[300];
     
     public static final int TRUCK = 110;
     public static final int FIRETRUCK = 120;
@@ -133,46 +133,46 @@ public class Art
     public static Sound getSound(int sound) {
     	try
         {
-   		if (samples[sound] == null) {
+   		//if (samples[sound] == null) {
    			switch (sound) {
 			case BOING:
-				samples[sound] = assets().getSound("snd/boing");
-				break;
+				return assets().getSound("snd/boing");
+				//break;
 			case DRAGGABLE_PLACED:
-				samples[sound] = assets().getSound("snd/dropped");
-				break;
+				return assets().getSound("snd/dropped");
+				//break;
 			case LEVEL_COMPLETED:
-				samples[sound] = assets().getSound("snd/applause");
-				break;
+				return assets().getSound("snd/applause");
+				//break;
 			case SPRING_1:
-				samples[sound] = assets().getSound("snd/spring1");
-				break;
+				return assets().getSound("snd/spring1");
+				//break;
 			case SPRING_2:
-				samples[sound] = assets().getSound("snd/spring2");
-				break;
+				return assets().getSound("snd/spring2");
+				//break;
 			case SPRING_3:
-				samples[sound] = assets().getSound("snd/spring3");
-				break;
+				return assets().getSound("snd/spring3");
+				//break;
 			case SPRING_4:
-				samples[sound] = assets().getSound("snd/spring4");
-				break;
+				return assets().getSound("snd/spring4");
+				//break;
 			case SPRING_5:
-				samples[sound] = assets().getSound("snd/spring5");
-				break;
+				return assets().getSound("snd/spring5");
+				//break;
 			case BUB_POP:
-				samples[sound] = assets().getSound("snd/pop");
-				break;
+				return assets().getSound("snd/pop");
+				//break;
 			default:
 				
-				samples[sound] = assets().getSound("snd/animal("+sound+")");
-				break;
+				return assets().getSound("snd/animal("+sound+")");
+				//break;
 			}
    			
-   			return samples[sound];
+   			//return samples[sound];
    			
-   		} else if (samples[sound] != null) {
+   		/*} else if (samples[sound] != null) {
    			return samples[sound];
-    	}
+    	}*/
 	    	
 	    	
         }
@@ -250,11 +250,14 @@ public class Art
 		}
     }
     
-    public enum type { CAR, TRUCK, BIKE, BOAT, BUS, EXCA, TRACTOR, VAN, TRAIN, MULETTO, HELI, PLANE, MOTO,
+    public enum type { RANDOM, CAR, TRUCK, BIKE, BOAT, BUS, EXCA, TRACTOR, VAN, TRAIN, MULETTO, HELI, PLANE, MOTO,
 		 FIRETRUCK, POLICE, AMBULANCE, RACE_CAR }
    
 	public static void playVehicleSound(type t) {
 		switch (t) {
+			case RANDOM:
+				playRandomSpring();
+				break;
 			case CAR:
 				Art.playSound(Art.CAR + (int)(random() * 3));
 				break;

@@ -13,21 +13,21 @@ import playn.core.Pointer.Event;
 
 public class InfoPageLayer {
 	
-	public static final String FULL_URL_1 = "market://details?id=co.romesoft.toddlers.puzzle.truckFull";
-	public static final String FULL_URL_2 = "http://play.google.com/store/apps/details?id=co.romesoft.toddlers.puzzle.truckFull";
+	public static final String FULL_URL_1 = "market://details?id=co.romesoft.toddlers.puzzle.toysFull";
+	public static final String FULL_URL_2 = "http://play.google.com/store/apps/details?id=co.romesoft.toddlers.puzzle.toysFull";
 	
-	public static final String LITE_URL_1 = "market://details?id=co.romesoft.toddlers.puzzle.truck";
-	public static final String LITE_URL_2 = "http://play.google.com/store/apps/details?id=co.romesoft.toddlers.puzzle.truck";
+	public static final String LITE_URL_1 = "market://details?id=co.romesoft.toddlers.puzzle.toys";
+	public static final String LITE_URL_2 = "http://play.google.com/store/apps/details?id=co.romesoft.toddlers.puzzle.toys";
 
 	public static final String SEARCH_URL_1 = "market://search?q=pub:romeLab";
 	public static final String SEARCH_URL_2 = "http://play.google.com/store/search?q=pub:romeLab";
 	
 	/*
-	public static final String FULL_URL_1 = "amzn://apps/android?p=co.romesoft.toddlers.puzzle.truckFull";
-	public static final String FULL_URL_2 = "http://www.amazon.com/gp/mas/dl/android?p=co.romesoft.toddlers.puzzle.truckFull";
+	public static final String FULL_URL_1 = "amzn://apps/android?p=co.romesoft.toddlers.puzzle.toysFull";
+	public static final String FULL_URL_2 = "http://www.amazon.com/gp/mas/dl/android?p=co.romesoft.toddlers.puzzle.toysFull";
 	
-	public static final String LITE_URL_1 = "amzn://apps/android?p=co.romesoft.toddlers.puzzle.truck";
-	public static final String LITE_URL_2 = "http://www.amazon.com/gp/mas/dl/android?p=co.romesoft.toddlers.puzzle.truck";
+	public static final String LITE_URL_1 = "amzn://apps/android?p=co.romesoft.toddlers.puzzle.toys";
+	public static final String LITE_URL_2 = "http://www.amazon.com/gp/mas/dl/android?p=co.romesoft.toddlers.puzzle.toys";
 
 	public static final String SEARCH_URL_1 = "amzn://apps/android?p=co.romesoft.toddlers.zoo&showAll=1";
 	public static final String SEARCH_URL_2 = "http://www.amazon.com/gp/mas/dl/android?p=co.romesoft.toddlers.zoo&showAll=1";
@@ -110,7 +110,7 @@ public class InfoPageLayer {
 				// mailto:rome.soft.co@gmail.com
 				// PlayN.openURL("mailto:rome.soft.co@gmail.com");
 				//AMAZON
-				//PlayN.openURL("http://www.amazon.com/gp/mas/dl/android?p=co.romesoft.toddlers.puzzle.truckFull");
+				//PlayN.openURL("http://www.amazon.com/gp/mas/dl/android?p=co.romesoft.toddlers.puzzle.toysFull");
 			} else if (relHeight<spacePerLink*2) {
 				//System.out.println("open url 2");
 				try {
@@ -119,7 +119,7 @@ public class InfoPageLayer {
 					PlayN.openURL(LITE_URL_2);
 				}
 				//AMAZON
-				//PlayN.openURL("http://www.amazon.com/gp/mas/dl/android?p=co.romesoft.toddlers.puzzle.truck");
+				//PlayN.openURL("http://www.amazon.com/gp/mas/dl/android?p=co.romesoft.toddlers.puzzle.toys");
 			}else if (relHeight<spacePerLink*3) {
 				//System.out.println("open url 3");
 				try {

@@ -63,8 +63,8 @@
     <Reference Include="System.Core" />
     <Reference Include="monotouch" />
     <Reference Include="OpenTK-1.0" />
-    <Reference Include="toddPuzzleTrucks-ios">
-      <HintPath>bin\toddPuzzleTrucks-ios.dll</HintPath>
+    <Reference Include="toddPuzzleShapes-ios">
+      <HintPath>bin\toddPuzzleShapes-ios.dll</HintPath>
     </Reference>
     <Reference Include="IKVM.OpenJDK.Core">
       <HintPath>bin\IKVM.OpenJDK.Core.dll</HintPath>

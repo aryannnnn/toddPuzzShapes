@@ -30,7 +30,7 @@ public class CloudLow {
 				il = graphics().createImageLayer(resource);
 				il.setOrigin(resource.width()/2f, resource.height()/2f);
 				
-				cloudY = (int)(Launcher.height-resource.height()*Launcher.multHeight/2f);
+				cloudY = (int)(Launcher.height-resource.height()*Launcher.multHeight/2f)+15*Launcher.multHeight;
 				/*if (cloudY<resource.height()/2f) {
 					cloudY = resource.height()/2f;
 				} else if (cloudY>(Launcher.height-resource.height()/2f)) {

@@ -6,7 +6,7 @@ import co.romesoft.core.Art.type;
 public class DragSounds {
 
 	public static type fromImageToType(final String image) {
-		
+		/*
 		if (image.contains("/1a.png")||image.contains("/6c.png")) {
 			return type.BIKE;
 			
@@ -72,8 +72,8 @@ public class DragSounds {
 		} else if (image.contains("/18c.png")) {
 			return type.AMBULANCE;
 			
-		}
+		}*/
 		
-		return type.CAR;
+		return type.RANDOM;
 	}
 }

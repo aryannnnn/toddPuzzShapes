@@ -26,7 +26,7 @@ public class Launcher implements Game {
 	public static float multHeight;
 	public static float multWidth;
 	
-	private static final String TIME_SPENT_PERSISTED_NAME = "toddPuzzleTruck";
+	private static final String TIME_SPENT_PERSISTED_NAME = "toddPuzzleToys";
 	
 	private static final int SHOW_LITE_POPUP_EVERY_MS = 60000*10; // 10 minutes
 	
@@ -89,8 +89,8 @@ public class Launcher implements Game {
       width = 1280;
       height = 800;
       */
-      //width = 320; 
-      //height = 240;
+      width = 400; 
+      height = 240;
       
       //if (width >= 800) {
       showAdsAlways = true;

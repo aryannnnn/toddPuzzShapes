@@ -17,7 +17,7 @@ public class Cloud {
 	float cloudX;
 
 	public Cloud(final GroupLayer g, int type, final Float x, final Float y) {
-		Image starImage = assets().getImage("images/objects/3c.png");
+		Image starImage = assets().getImage("images/objects/8c.png");
 	    starImage.addCallback(new ResourceCallback<Image>() {
 			
 			@Override
@@ -58,7 +58,7 @@ public class Cloud {
 	
 	public void update(float delta) {
 		 cloudX += delta * 0.063f*Launcher.multHeight;
-		  il.setTranslation(cloudX, 20*Launcher.multHeight);
+		  il.setTranslation(cloudX, 70*Launcher.multHeight);
 
 		    if (cloudX > il.width() + Launcher.width) {
 		    	cloudX = -il.width();

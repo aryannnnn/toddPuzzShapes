@@ -1,4 +1,4 @@
-package co.romesoft.toddlers.puzzle.truck;
+package co.romesoft.toddlers.puzzle.toys;
 
 import playn.android.GameActivity;
 import playn.core.PlayN;
