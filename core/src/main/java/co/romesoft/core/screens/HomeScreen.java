@@ -38,7 +38,7 @@ public class HomeScreen extends Screen  implements Keyboard.Listener {
 	//BubblesLayer bl;
 	 InfoPageLayer infoPageL;
 	 
-	 Sound startSound = assets().getSound("snd/traffic");
+	 //Sound startSound = assets().getSound("snd/traffic");
 	
 	public HomeScreen(final ScreenStack _screens, LauncherInterface launcher) {
 		this._screens = _screens;
@@ -79,8 +79,8 @@ public class HomeScreen extends Screen  implements Keyboard.Listener {
 		 System.out.println("HomeScreen wasShown");
 	     super.wasShown();
 	     
-	     startSound.setLooping(true);
-	     startSound.play();
+	     //startSound.setLooping(true);
+	     //startSound.play();
 	     
 	     System.out.println("keyboard().setListener home");
 		 keyboard().setListener(this);
@@ -191,8 +191,8 @@ public class HomeScreen extends Screen  implements Keyboard.Listener {
 		 System.out.println("HomeScreen wasHidden");
 	        super.wasHidden();
 	        
-	        startSound.setLooping(false);
-	        startSound.stop();
+	        //startSound.setLooping(false);
+	        //startSound.stop();
 	        
 	        //iface.destroyRoot(_root);
 	        while (layer.size() > 0) {

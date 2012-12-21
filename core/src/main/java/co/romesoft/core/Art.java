@@ -250,34 +250,43 @@ public class Art
 		}
     }
     
-    public enum type {BIPLANE,BALL,DRUMS,HORSE,DOG, BABY,CHICKEN,GUITAR, RANDOM, CAR, TRUCK, BIKE, BOAT, BUS, EXCA, TRACTOR, VAN, TRAIN, MULETTO, HELI, PLANE, MOTO,
+    public enum type {DUCK,ROBOT, MOTORBOAT,BIPLANE,BALL,DRUMS,HORSE,DOG, BABY,CHICKEN,GUITAR, RANDOM, CAR, TRUCK, BIKE, BOAT, BUS, EXCA, TRACTOR, VAN, TRAIN, MULETTO, HELI, PLANE, MOTO,
 		 FIRETRUCK, POLICE, AMBULANCE, RACE_CAR }
    
 	public static void playVehicleSound(type t) {
 		switch (t) {
+			case DUCK:
+				assets().getSound("snd/duck").play();
+				break;
+			case ROBOT:
+				assets().getSound("snd/robot").play();
+				break;
+			case MOTORBOAT:
+				assets().getSound("snd/motorboat").play();
+				break;
 			case BIPLANE:
-				assets().getSound("snd/biplane");
+				assets().getSound("snd/biplane").play();
 				break;
 			case BALL:
-				assets().getSound("snd/ball");
+				assets().getSound("snd/ball").play();
 				break;
 			case DRUMS:
-				assets().getSound("snd/drums");
+				assets().getSound("snd/drums").play();
 				break;
 			case HORSE:
-				assets().getSound("snd/horse");
+				assets().getSound("snd/horse").play();
 				break;
 			case DOG:
-				assets().getSound("snd/dog");
+				assets().getSound("snd/dog").play();
 				break;
 			case CHICKEN:
-				assets().getSound("snd/chicken");
+				assets().getSound("snd/chicken").play();
 				break;
 			case GUITAR:
-				assets().getSound("snd/guitar");
+				assets().getSound("snd/guitar").play();
 				break;
 			case BABY:
-				assets().getSound("snd/baby");
+				assets().getSound("snd/baby").play();
 				break;
 			case RANDOM:
 				playRandomSpring();
