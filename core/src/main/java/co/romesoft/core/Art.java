@@ -128,6 +128,9 @@ public class Art
     public static final int LEVEL_COMPLETED = 295;
     public static final int DRAGGABLE_PLACED = 296;
     public static final int BOING = 297;
+    public static final int SPRING_6 = 298;
+    public static final int SPRING_7 = 299;
+    public static final int SPRING_8 = 300;
    
     
     public static Sound getSound(int sound) {
@@ -158,6 +161,12 @@ public class Art
 				//break;
 			case SPRING_5:
 				return assets().getSound("snd/spring5");
+			case SPRING_6:
+				return assets().getSound("snd/spring6");
+			case SPRING_7:
+				return assets().getSound("snd/spring7");
+			case SPRING_8:
+				return assets().getSound("snd/spring8");
 				//break;
 			case BUB_POP:
 				return assets().getSound("snd/pop");
@@ -227,7 +236,7 @@ public class Art
     
     
     public static void playRandomSpring() {
-    	int v = Utils.getInRange(1,6);
+    	int v = Utils.getInRange(1,9);
     	switch (v) {
 			case 1:
 				Art.playSound(SPRING_1);
@@ -243,6 +252,15 @@ public class Art
 				break;
 			case 5:
 				Art.playSound(SPRING_5);
+				break;
+			case 6:
+				Art.playSound(SPRING_6);
+				break;
+			case 7:
+				Art.playSound(SPRING_7);
+				break;
+			case 8:
+				Art.playSound(SPRING_8);
 				break;
 			default:
 				Art.playSound(SPRING_1);
