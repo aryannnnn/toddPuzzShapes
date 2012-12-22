@@ -1,7 +1,7 @@
--off images
+
 -full version
 
--ico 512 (FREE) (come trucks) / 1024 500 / 180x120 / screenshoot
+-ico 512 (FREE) OK / 1024 500 / 180x120 / screenshoot
 
 ---------------------------
 

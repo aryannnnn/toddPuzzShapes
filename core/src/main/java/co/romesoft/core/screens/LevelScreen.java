@@ -29,11 +29,13 @@ import co.romesoft.core.draggable.DropZone;
 
 
 public class LevelScreen extends Screen implements Keyboard.Listener {
+	private static final float MIN_SCALE_VAL = 0.4f;
+
 	private static final int TRY_TO_PLACE = 1000;
 
 	private ScreenStack _screens;
 	
-	public static final int NUM_LEVELS = 20; //20 FULL //15 FREE
+	public static final int NUM_LEVELS = 15; //20 FULL //15 FREE
 	
 	private static int MAX_DRAG_ITEMS = 3;
 	private int num_draggable;
@@ -155,7 +157,7 @@ public class LevelScreen extends Screen implements Keyboard.Listener {
 		    	
 		    	if (i > TRY_TO_PLACE/2) {
 			    	scaleVal = DropZone.SCALE_VAL_DEFAULT - (DropZone.SCALE_VAL_DEFAULT*(float)i/(float)TRY_TO_PLACE);
-			    	if (scaleVal<0.5) scaleVal=0.5f;
+			    	if (scaleVal<MIN_SCALE_VAL) scaleVal=MIN_SCALE_VAL;
 		    	}
 			}
 			if (notOverlap) {
@@ -195,7 +197,7 @@ public class LevelScreen extends Screen implements Keyboard.Listener {
 		    	
 		    	if (i > TRY_TO_PLACE/2) {
 			    	scaleVal = DropZone.SCALE_VAL_DEFAULT - (DropZone.SCALE_VAL_DEFAULT*(float)i/(float)TRY_TO_PLACE);
-			    	if (scaleVal<0.5) scaleVal=0.5f;
+			    	if (scaleVal<MIN_SCALE_VAL) scaleVal=MIN_SCALE_VAL;
 		    	}
 			}
 			if (notOverlap) {
@@ -242,7 +244,7 @@ public class LevelScreen extends Screen implements Keyboard.Listener {
 			    	
 			    	if (i > TRY_TO_PLACE/2) {
 				    	scaleVal = DropZone.SCALE_VAL_DEFAULT - (DropZone.SCALE_VAL_DEFAULT*(float)i/(float)TRY_TO_PLACE);
-				    	if (scaleVal<0.5) scaleVal=0.5f;
+				    	if (scaleVal<MIN_SCALE_VAL) scaleVal=MIN_SCALE_VAL;
 			    	}
 				}
 				if (notOverlap) {

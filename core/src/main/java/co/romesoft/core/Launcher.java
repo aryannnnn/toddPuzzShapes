@@ -89,8 +89,8 @@ public class Launcher implements Game {
       width = 1280;
       height = 800;
       */
-      width = 400; 
-      height = 240;
+      //width = 400; 
+      //height = 240;
       
       //if (width >= 800) {
       showAdsAlways = true;
