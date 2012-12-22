@@ -133,46 +133,46 @@ public class LauncherActivity extends GameActivity implements LauncherInterface{
 		
 		
 		private static final String messageEN = "This is the FREE version of the app. " +
-		 		"If your kid likes this game, you can buy the full version in the market with more puzzles/vehicles and without Advertising." +
+		 		"If your kid likes this game, you can buy the full version in the market with more puzzles/toys and without Advertising." +
 		 		" Thanks for your support!";
 		private static final String messageENSave = "You can store only three drawings in the free version. " +
-		 		"If your kid likes this game, you can buy the full version in the market with more puzzles/vehicles and without Advertising." +
+		 		"If your kid likes this game, you can buy the full version in the market with more puzzles/toys and without Advertising." +
 		 		" Thanks for your support!";
 		private static String buyEN = "Buy";
 		private static String noThanksEN = "No, thanks!";
 		
 		private static final String messageES = "Esta es la versión gratuita de la aplicación. " +
-				"Si su hijo le gusta este juego, usted puede comprar la versión completa en el market con más rompecabezas/vehículos y sin publicidad." +
+				"Si su hijo le gusta este juego, usted puede comprar la versión completa en el market con más rompecabezas/juguetes y sin publicidad." +
 				" Gracias por tu apoyo!";
 		private static final String messageESSave = "Puede almacenar sólo tres dibujos en la versión gratuita. " +
-				"Si su hijo le gusta este juego, usted puede comprar la versión completa en el market con más rompecabezas/vehículos y sin publicidad." +
+				"Si su hijo le gusta este juego, usted puede comprar la versión completa en el market con más rompecabezas/juguetes y sin publicidad." +
 				" Gracias por tu apoyo!";
 		private static String buyES = "Comprar";
 		private static String noThanksES = "No, gracias!";
 		
 		private static final String messageIT = "Questa è la versione gratuita dell'applicazione. " +
-				"Se al vostro bambino piace questo gioco, potete acquistare la versione completa sul market con più puzzle/veicoli e senza pubblicità." +
+				"Se al vostro bambino piace questo gioco, potete acquistare la versione completa sul market con più puzzle/giocattoli e senza pubblicità." +
 				" Grazie per il vostro supporto!";
 		private static final String messageITSave = "È possibile memorizzare solo tre disegni nella versione gratuita. " +
-				"Se al vostro bambino piace questo gioco, potete acquistare la versione completa sul market con più puzzle/veicoli e senza pubblicità." +
+				"Se al vostro bambino piace questo gioco, potete acquistare la versione completa sul market con più puzzle/giocattoli e senza pubblicità." +
 				" Grazie per il vostro supporto!";
 		private static String buyIT = "Acquista";
 		private static String noThanksIT = "No, grazie!";
 				
 		private static final String messageFR = "Ceci est la version gratuite de l'application. " +
-				"Si votre enfant aime ce jeu, vous pouvez acheter la version complète sur le market avec plus de puzzle/véhicules et sans publicité." +
+				"Si votre enfant aime ce jeu, vous pouvez acheter la version complète sur le market avec plus de puzzle/jouets et sans publicité." +
 				" Merci pour votre soutien!";
 		private static final String messageFRSave = "Vous pouvez mémoriser que trois dessins dans la version gratuite. " +
-				"Si votre enfant aime ce jeu, vous pouvez acheter la version complète sur le market avec plus de puzzle/véhicules et sans publicité." +
+				"Si votre enfant aime ce jeu, vous pouvez acheter la version complète sur le market avec plus de puzzle/jouets et sans publicité." +
 				" Merci pour votre soutien!";
 		private static String buyFR = "Achetez-le";
 		private static String noThanksFR = "Non, merci!";
 		
 		private static final String messageDE = "Dies ist die kostenlose Version der App. " +
-				"Ist Ihr Kind mag dieses Spiel, können Sie die Vollversion auf dem market mit mehr Puzzles/Fahrzeuge und ohne Werbung kaufen." +
+				"Ist Ihr Kind mag dieses Spiel, können Sie die Vollversion auf dem market mit mehr Puzzles/Spielzeug und ohne Werbung kaufen." +
 				" Vielen Dank für Ihre Unterstützung!";
 		private static final String messageDESave = "Sie können nur drei Zeichnungen in der kostenlosen Version zu speichern. " +
-				"Ist Ihr Kind mag dieses Spiel, können Sie die Vollversion auf dem market mit mehr Puzzles/Fahrzeuge und ohne Werbung kaufen." +
+				"Ist Ihr Kind mag dieses Spiel, können Sie die Vollversion auf dem market mit mehr Puzzles/Spielzeug und ohne Werbung kaufen." +
 				" Vielen Dank für Ihre Unterstützung!";
 		private static String buyDE = "Kaufen";
 		private static String noThanksDE = "Nein, danke!";
