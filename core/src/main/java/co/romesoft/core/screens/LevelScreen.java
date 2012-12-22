@@ -35,7 +35,7 @@ public class LevelScreen extends Screen implements Keyboard.Listener {
 
 	private ScreenStack _screens;
 	
-	public static final int NUM_LEVELS = 15; //20 FULL //15 FREE
+	public static final int NUM_LEVELS = 20; //20 FULL //15 FREE
 	
 	private static int MAX_DRAG_ITEMS = 3;
 	private int num_draggable;
@@ -106,7 +106,7 @@ public class LevelScreen extends Screen implements Keyboard.Listener {
 	    
 	    int availableHeight = Launcher.height;
 	    int adsHeight = 0;
-		boolean adsShowed = Launcher.showAdsAlways || Launcher.showAdsSometimes;
+		boolean adsShowed = false;
 		if (adsShowed) {
 			adsHeight = (int)(50*Launcher.screenDensity);
 			availableHeight = availableHeight - adsHeight;

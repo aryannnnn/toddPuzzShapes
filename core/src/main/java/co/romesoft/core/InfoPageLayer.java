@@ -51,7 +51,7 @@ public class InfoPageLayer {
 		graphics().rootLayer().add(il2);
 		
 		
-		infoImage = assets().getImage("images/infoPage.png");
+		infoImage = assets().getImage("images/infoPage_FULL.png");
 		infoImage.addCallback(new ResourceCallback<Image>() {
 			
 			@Override
@@ -102,24 +102,28 @@ public class InfoPageLayer {
 			
 			if (relHeight<spacePerLink) {
 				////System.out.println("open url 1");
+				/*try {
+					PlayN.openURL("market://details?id=co.romesoft.toddlers.carsFull");
+				} catch (Exception e) {
+					PlayN.openURL("http://play.google.com/store/apps/details?id=co.romesoft.toddlers.carsFull");
+				}*/
+				// mailto:rome.soft.co@gmail.com
+				// 
+				try {
+				PlayN.openURL("mailto:rome.soft.co@gmail.com");
+				} catch (Exception e) {
+				}
+				//AMAZON
+				//PlayN.openURL("http://www.amazon.com/gp/mas/dl/android?p=co.romesoft.toddlers.carsFull");
+			} else if (relHeight<spacePerLink*2) {
+				//System.out.println("open url 2");
 				try {
 					PlayN.openURL(FULL_URL_1);
 				} catch (Exception e) {
 					PlayN.openURL(FULL_URL_2);
 				}
-				// mailto:rome.soft.co@gmail.com
-				// PlayN.openURL("mailto:rome.soft.co@gmail.com");
 				//AMAZON
-				//PlayN.openURL("http://www.amazon.com/gp/mas/dl/android?p=co.romesoft.toddlers.puzzle.toysFull");
-			} else if (relHeight<spacePerLink*2) {
-				//System.out.println("open url 2");
-				try {
-					PlayN.openURL(LITE_URL_1);
-				} catch (Exception e) {
-					PlayN.openURL(LITE_URL_2);
-				}
-				//AMAZON
-				//PlayN.openURL("http://www.amazon.com/gp/mas/dl/android?p=co.romesoft.toddlers.puzzle.toys");
+				//PlayN.openURL("http://www.amazon.com/gp/mas/dl/android?p=co.romesoft.toddlers.carsFull");
 			}else if (relHeight<spacePerLink*3) {
 				//System.out.println("open url 3");
 				try {

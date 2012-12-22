@@ -226,7 +226,7 @@ public class HomeScreen extends Screen  implements Keyboard.Listener {
 		_screens.popTo(this);
 		
 		Launcher.gameStarted = false;
-		launcher.showAds();
+		//launcher.showAds();
 	}
 
 	@Override

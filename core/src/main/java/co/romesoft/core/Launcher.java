@@ -26,7 +26,7 @@ public class Launcher implements Game {
 	public static float multHeight;
 	public static float multWidth;
 	
-	private static final String TIME_SPENT_PERSISTED_NAME = "toddPuzzleToys";
+	/*private static final String TIME_SPENT_PERSISTED_NAME = "toddPuzzleToys";
 	
 	private static final int SHOW_LITE_POPUP_EVERY_MS = 60000*10; // 10 minutes
 	
@@ -34,7 +34,7 @@ public class Launcher implements Game {
 	public static boolean showAdsAlways=false;
 	
 	private static final int SHOW_ADS_SOMETIMES = 60000*20; // 20 minutes
-	public static boolean showAdsSometimes=false;
+	public static boolean showAdsSometimes=false;*/
 	
 	public static float screenDensity;
 	
@@ -93,19 +93,19 @@ public class Launcher implements Game {
       //height = 240;
       
       //if (width >= 800) {
-      showAdsAlways = true;
+      //showAdsAlways = true;
       //}
       screenDensity = launcher.getScreenDensity();
       gameStarted = false;
 	  
-      try {
+      /*try {
     	  String item = storage().getItem(TIME_SPENT_PERSISTED_NAME);
     	  if (item!=null) {
     		  playingTime = Float.parseFloat(item);
     	  }
 		} catch (Exception e1) {
 			
-		}
+		}*/
 		
         //based on the native assets resolution (bg is 320 h 480 w)
 		multHeight = (float)((float)Launcher.height / (float)480);
@@ -121,7 +121,7 @@ public class Launcher implements Game {
     
     
        //graphics().rootLayer().add(home.layer);
-	   launcher.showAds();
+	   //launcher.showAds();
   }
   
 
@@ -134,6 +134,7 @@ public class Launcher implements Game {
   public void update(float delta) {
 	  if (paused) return;
 	  
+	  /*
 	  if (gameStarted) {
 		  playingTime+=delta;
 		  
@@ -157,6 +158,7 @@ public class Launcher implements Game {
 			  showAdsSometimes = true;
 		  }
 	  }
+	  */
 	  
 	  _screens.update(delta);
   }
