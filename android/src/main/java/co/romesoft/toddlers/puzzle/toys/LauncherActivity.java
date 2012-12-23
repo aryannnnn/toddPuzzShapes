@@ -33,7 +33,8 @@ public class LauncherActivity extends GameActivity implements LauncherInterface{
 	@Override
 	public void closeLauncher() {
 		//this.finish();
-		this.moveTaskToBack(true);
+		//this.moveTaskToBack(true);
+		System.exit(0);
 		
 		
 	}

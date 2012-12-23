@@ -118,6 +118,9 @@ public class HomeScreen extends Screen  implements Keyboard.Listener {
 				public void onPointerEnd(Event event) {
 					
 					if (infoPageL ==null) {
+						if (!Launcher.showLinks()) {
+							launcher.hideAds();
+						}
 						Launcher.gameStarted = true;
 						int levelNumber = (int)((Math.random()*LevelScreen.NUM_LEVELS))+1;
 						_screens.push(new LevelScreen(_screens, HomeScreen.this, levelNumber));
@@ -139,7 +142,7 @@ public class HomeScreen extends Screen  implements Keyboard.Listener {
 				
 			});
 			
-			
+			if (Launcher.showLinks()) {
 			Image infoImage = assets().getImage("images/info.png");
 			ImageLayer infoLayer = graphics().createImageLayer(infoImage);
 			//width-infoImage.width(), height-infoImage.height()
@@ -182,6 +185,7 @@ public class HomeScreen extends Screen  implements Keyboard.Listener {
 				}
 				
 			});
+			}
 	     
 	     
 			 //bl = new BubblesLayer(layer);

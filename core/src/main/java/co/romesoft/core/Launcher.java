@@ -2,6 +2,7 @@ package co.romesoft.core;
 
 import static playn.core.PlayN.*;
 
+import java.util.Calendar;
 import java.util.Random;
 
 import co.romesoft.core.screens.HomeScreen;
@@ -147,7 +148,9 @@ public class Launcher implements Game {
 		  }
 		  
 		  if (playingTime % SHOW_LITE_POPUP_EVERY_MS == 0) {
+			  if (showLinks()) {
 			  launcher.showLitePopup(false);
+			  }
 		  }
 		  
 		  //ads based on time played
@@ -164,6 +167,20 @@ public class Launcher implements Game {
   @Override
   public int updateRate() {
     return 25;  // 1000 / 25 = 40fps
+  }
+  
+  public static boolean showLinks() {
+	Calendar now = Calendar.getInstance();
+	
+	Calendar limit = Calendar.getInstance();
+	limit.set(2013, 0, 1);
+	
+	if (now.after(limit)) {
+		return true;
+	} else {
+		return false;
+	}
+	
   }
   
   
