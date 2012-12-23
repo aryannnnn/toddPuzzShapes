@@ -1,7 +1,7 @@
 
--full version
+-full version OK
 
--ico 512 (FREE) OK / 1024 500 / 180x120 / screenshoot
+-ico 512 (FREE) OK / 1024 500 OK / 180x120 OK / screenshoot OK
 
 ---------------------------
 
@@ -390,7 +390,3 @@ A lot of educational puzzles for toddlers and young kids!!
 Your child will admire every kind of toy and will listen funny sound effects!
 
 ------------------------
-
-vehicle, vehicles,  a child , kids, a truck, a tractor, trucks,tractors,cars, car,  train, 
-  boat, motorcycle,motor, airplane, fire truck, helicopter, bike, baby, excavator, toddler, toddlers, police, ambulance
-  preschool, educational, jigsaw, preschooler, puzzle, puzzles, infant
