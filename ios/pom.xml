@@ -40,6 +40,7 @@
         <!-- this lets Maven know that we define 'packaging: dll' -->
         <extensions>true</extensions>
         <configuration>
+            <onlyCode>true</onlyCode>
           <ikvmArgs>
             <ikvmArg>-debug</ikvmArg>
           </ikvmArgs>

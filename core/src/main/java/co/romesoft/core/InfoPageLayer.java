@@ -12,7 +12,15 @@ import playn.core.Pointer.Event;
 
 
 public class InfoPageLayer {
+	public static final String FULL_URL_1 = "itms-apps://itunes.apple.com/app/id591203279";
+	public static final String FULL_URL_2 = "http://itunes.apple.com/app/id591203279?mt=8";
 	
+	public static final String LITE_URL_1 = "itms-apps://itunes.apple.com/app/id591204908";
+	public static final String LITE_URL_2 = "http://itunes.apple.com/app/id591204908?mt=8";
+
+	public static final String SEARCH_URL_1 = "itms-apps://itunes.com/apps/StefanoFrassi";
+	public static final String SEARCH_URL_2 = "http://itunes.com/apps/StefanoFrassi";
+	/*
 	public static final String FULL_URL_1 = "market://details?id=co.romesoft.toddlers.puzzle.toysFull";
 	public static final String FULL_URL_2 = "http://play.google.com/store/apps/details?id=co.romesoft.toddlers.puzzle.toysFull";
 	
@@ -21,7 +29,7 @@ public class InfoPageLayer {
 
 	public static final String SEARCH_URL_1 = "market://search?q=pub:romeLab";
 	public static final String SEARCH_URL_2 = "http://play.google.com/store/search?q=pub:romeLab";
-	
+	*/
 	/*
 	public static final String FULL_URL_1 = "amzn://apps/android?p=co.romesoft.toddlers.puzzle.toysFull";
 	public static final String FULL_URL_2 = "http://www.amazon.com/gp/mas/dl/android?p=co.romesoft.toddlers.puzzle.toysFull";
