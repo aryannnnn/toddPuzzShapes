@@ -346,7 +346,7 @@ public class LevelScreen extends Screen implements Keyboard.Listener {
 		nextpuzzleImageLayer.setScale(Launcher.multWidth);
 		
 		nextpuzzleImageLayer.setTranslation((RANDOM_DROPZONES_POSITION_PAD*Launcher.multWidth-nextpuzzleImageLayer.scaledWidth())/2, 
-				(Launcher.height-nextpuzzleImageLayer.scaledHeight())/2);
+				(Launcher.height/2-nextpuzzleImageLayer.scaledHeight())/2);
 		
 		layer.add(nextpuzzleImageLayer);
 		
@@ -362,6 +362,43 @@ public class LevelScreen extends Screen implements Keyboard.Listener {
 			@Override
 			public void onPointerEnd(Event event) {
 				
+				
+			}
+			
+			@Override
+			public void onPointerDrag(Event event) {
+				
+				
+			}
+
+			//@Override
+			public void onPointerCancel(Event event) {
+				// TODO Auto-generated method stub
+				
+			}
+		});
+		
+		
+		Image homeImage = assets().getImage("images/home.png");
+		final ImageLayer homeImageLayer = graphics().createImageLayer(homeImage);
+		homeImageLayer.setScale(Launcher.multWidth);
+		
+		homeImageLayer.setTranslation((RANDOM_DROPZONES_POSITION_PAD*Launcher.multWidth-homeImageLayer.scaledWidth())/2, 
+				Launcher.height/2+(Launcher.height/2-nextpuzzleImageLayer.scaledHeight())/2);
+		
+		layer.add(homeImageLayer);
+		
+		homeImageLayer.addListener(new Listener() {
+			
+			@Override
+			public void onPointerStart(Event event) {
+				
+				
+			}
+			
+			@Override
+			public void onPointerEnd(Event event) {
+				hs.backToHome();
 				
 			}
 			
