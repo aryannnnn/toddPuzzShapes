@@ -3,14 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleDisplayName</key>
-	<string>Launcher</string>
+	<string>Toys Puzzles for Toddlers</string>
 	<key>CFBundleIconFiles</key>
 	<array>
-		<string>touch-icon-57x57.png</string>
+		<string>57.png</string>
+		<string>114.png</string>
+		<string>72.png</string>
+		<string>144.png</string>
+		<string>29.png</string>
+		<string>58.png</string>
+		<string>50.png</string>
+		<string>100.png</string>
 	</array>
 	
 	<key>CFBundleIdentifier</key>
-	<string>co.romesoft.toddlers.puzzle.toys</string>
+	<string>co.romesoft.toddlers.puzzle.toysFull</string>
 	
 	<key>CFBundleVersion</key>
 	<string>1.0.1</string>
@@ -23,7 +30,8 @@
 		<integer>1</integer>
 		<integer>2</integer>
 	</array>
-	
+	<key>UIPrerenderedIcon</key>
+	<true/>
 	<key>UIStatusBarHidden</key>
 	<true/>
 	
