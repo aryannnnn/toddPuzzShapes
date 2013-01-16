@@ -1,3 +1,6 @@
+-id infopaglayer
+-home.png
+-admob id
 
 -full version OK
 
@@ -25,7 +28,7 @@ Easy to learn and to control:
 -interact with all the elements on the screen when a puzzle is solved
 -when a puzzle is completed tap the arrow to change to the next level
 
-Available for all screen resolutions and devices, including tablet device as Kindle and Samsung !
+Available for all screen resolutions and devices ( ipad / ipod / iphone )!
 Simple and intuitive, your baby will have lots of fun for hours!
 
 This educational game will help your toddler to improve skills in problem solving, 
@@ -353,7 +356,7 @@ Easy to learn and to control:
 -interact with all the elements on the screen when a puzzle is solved
 -when a puzzle is completed tap the arrow to change to the next level
 
-Available for all screen resolutions and devices, including tablet device as Kindle and Samsung !
+Available for all screen resolutions and devices ( ipad / ipod / iphone )!
 Simple and intuitive, your baby will have lots of fun for hours!
 
 This educational game will help your toddler to improve skills in problem solving, 
