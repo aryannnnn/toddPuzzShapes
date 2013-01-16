@@ -1,5 +1,4 @@
 -id infopaglayer
--home.png
 -admob id
 
 -full version OK
