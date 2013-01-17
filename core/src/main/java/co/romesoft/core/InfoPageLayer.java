@@ -12,11 +12,11 @@ import playn.core.Pointer.Event;
 
 
 public class InfoPageLayer {
-	public static final String FULL_URL_1 = "itms-apps://itunes.apple.com/app/id591203279";
-	public static final String FULL_URL_2 = "http://itunes.apple.com/app/id591203279?mt=8";
+	public static final String FULL_URL_1 = "itms-apps://itunes.apple.com/app/id594444436";
+	public static final String FULL_URL_2 = "http://itunes.apple.com/app/id594444436?mt=8";
 	
-	public static final String LITE_URL_1 = "itms-apps://itunes.apple.com/app/id591204908";
-	public static final String LITE_URL_2 = "http://itunes.apple.com/app/id591204908?mt=8";
+	public static final String LITE_URL_1 = "itms-apps://itunes.apple.com/app/id594445572";
+	public static final String LITE_URL_2 = "http://itunes.apple.com/app/id594445572?mt=8";
 
 	public static final String SEARCH_URL_1 = "itms-apps://itunes.com/apps/StefanoFrassi";
 	public static final String SEARCH_URL_2 = "http://itunes.com/apps/StefanoFrassi";
