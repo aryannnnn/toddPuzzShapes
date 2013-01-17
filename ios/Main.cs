@@ -48,7 +48,7 @@ namespace co.romesoft
 		Console.WriteLine("width ad banner: "+GADAdSizeCons.Banner.size.Width); //320
 	    ad = new GADBannerView(GADAdSizeCons.Banner,new PointF((pf.graphics().screenWidth()/2)-(GADAdSizeCons.Banner.size.Width/2),0))
 		{
-			AdUnitID = "a150e5eb1ccfabb",
+			AdUnitID = "a150f851a323813",
 			RootViewController = w.RootViewController //or your RootViewController  
 		};
 		
