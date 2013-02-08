@@ -40,6 +40,25 @@
       <version>${android.version}</version>
       <scope>provided</scope>
     </dependency>
+    <!--  
+     <dependency>
+      <groupId>com.inmobi</groupId>
+      <artifactId>InMobiAndroidSDK</artifactId>
+      <version>1.0</version>
+    </dependency>
+    
+     <dependency>
+       <groupId>com.google.admob</groupId>
+  <artifactId>admob-anrdoid-sdk</artifactId>
+  <version>4.3.1</version>
+    </dependency>
+    -->
+    
+     <dependency>
+       <groupId>com.amazon</groupId>
+  <artifactId>in-app-purchasing</artifactId>
+  <version>1.0.3</version>
+    </dependency>
   </dependencies>
 
   <build>

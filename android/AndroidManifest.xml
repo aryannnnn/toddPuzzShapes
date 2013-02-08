@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
       package="co.romesoft.toddlers.puzzle.toys"
       android:screenOrientation="landscape"
-      android:versionCode="1"
-      android:versionName="1.0.1"
+      android:versionCode="2"
+      android:versionName="1.0.2"
       android:installLocation="auto">
     <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="11" />
     
@@ -30,6 +30,13 @@
               
               android:configChanges="keyboardHidden|orientation|keyboard|screenLayout|uiMode|screenSize|smallestScreenSize"
               />
-        
+		
+		<receiver android:name="com.amazon.inapp.purchasing.ResponseReceiver">
+         <intent-filter>
+              <action android:name="com.amazon.inapp.purchasing.NOTIFY"                                       
+                      android:permission="com.amazon.inapp.purchasing.Permission.NOTIFY" />
+         </intent-filter>
+    	</receiver>
+    
     </application>
 </manifest>

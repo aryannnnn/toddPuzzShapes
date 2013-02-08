@@ -101,8 +101,13 @@ public class HomeScreen extends Screen  implements Keyboard.Listener {
 			
 			playButtonL.setScale(Launcher.multHeight);
 			playButtonL.setAlpha(0.9f);
-			playButtonL.setTranslation((Launcher.width / 2) - (playButtonL.scaledWidth() / 2f) , 
+			if (Launcher.unlocked) {
+				playButtonL.setTranslation((Launcher.width / 2) - (playButtonL.scaledWidth() / 2f) , 
 					Launcher.height / 2 + ( (-playButtonL.scaledHeight())/2));
+			} else {
+				int val = (int)(50*launcher.getScreenDensity());
+				playButtonL.setTranslation((Launcher.width / 2) - (playButtonL.scaledWidth() / 2f) , val + (Launcher.height-val)/ 2 + ( (-playButtonL.scaledHeight())));
+			}
 			layer.add(playButtonL);
 			
 			
@@ -119,7 +124,7 @@ public class HomeScreen extends Screen  implements Keyboard.Listener {
 					
 					if (infoPageL ==null) {
 						Launcher.gameStarted = true;
-						int levelNumber = (int)((Math.random()*LevelScreen.NUM_LEVELS))+1;
+						int levelNumber = (int)((Math.random()*LevelScreen.getNumLevels()))+1;
 						_screens.push(new LevelScreen(_screens, HomeScreen.this, levelNumber));
 					}
 					
@@ -138,6 +143,40 @@ public class HomeScreen extends Screen  implements Keyboard.Listener {
 				}
 				
 			});
+			
+			if (!Launcher.unlocked) {
+				Image unlockButtonImage = assets().getImage("images/unlock_button.png");
+			    ImageLayer unlockButtonL = graphics().createImageLayer(unlockButtonImage);
+				
+			    unlockButtonL.setScale(Launcher.multHeight);
+			    unlockButtonL.setAlpha(0.9f);
+			    
+			    int val = (int)(50*launcher.getScreenDensity());
+				unlockButtonL.setTranslation((Launcher.width / 2) - (unlockButtonL.scaledWidth() / 2f) , val + (Launcher.height-val)/ 2 + ( (+unlockButtonL.scaledHeight())/2));
+			
+				layer.add(unlockButtonL);
+				
+				unlockButtonL.addListener(new Listener() {
+
+					@Override
+					public void onPointerStart(Event event) {
+						launcher.showLitePopup(false);
+					}
+
+					@Override
+					public void onPointerEnd(Event event) {
+					}
+
+					@Override
+					public void onPointerDrag(Event event) {
+					}
+
+					//@Override
+					public void onPointerCancel(Event event) {
+					}
+					
+				});
+			}
 			
 			
 			Image infoImage = assets().getImage("images/info.png");
@@ -226,7 +265,9 @@ public class HomeScreen extends Screen  implements Keyboard.Listener {
 		_screens.popTo(this);
 		
 		Launcher.gameStarted = false;
+		if (!Launcher.unlocked) {
 		launcher.showAds();
+		}
 	}
 
 	@Override
