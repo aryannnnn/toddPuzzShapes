@@ -32,6 +32,18 @@
   </dependencies>
 
   <build>
+     
+    <resources>
+     
+      <resource>
+        <directory>${project.build.sourceDirectory}</directory>
+      </resource>
+      
+      <resource>
+        <directory>../core/src/main/java</directory>
+      </resource>
+    </resources>
+     
     <plugins>
       <!-- unpack LWJGL when testing -->
       <plugin>
