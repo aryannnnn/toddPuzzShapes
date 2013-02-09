@@ -45,7 +45,7 @@ public class LauncherActivity extends GameActivity implements LauncherInterface{
 		
 	  @Override
 	  public void main() {
-	    platform().assets().setPathPrefix("co/romesoft/resources");
+	    //platform().assets().setPathPrefix("co/romesoft/resources");
 	    game = new Launcher(this);
 		PlayN.run(game);
 	  }

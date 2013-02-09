@@ -34,16 +34,17 @@
         <artifactId>maven-source-plugin</artifactId>
       </plugin>
     </plugins>
-
+<!-- 
     <resources>
-      <!-- include the source files in our main jar for use by GWT -->
+      include the source files in our main jar for use by GWT
       <resource>
         <directory>${project.build.sourceDirectory}</directory>
       </resource>
-      <!-- and continue to include our standard resources -->
+      and continue to include our standard resources
       <resource>
         <directory>${basedir}/src/main/resources</directory>
       </resource>
     </resources>
+     -->
   </build>
 </project>
