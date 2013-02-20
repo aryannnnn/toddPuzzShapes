@@ -28,7 +28,10 @@ public class Launcher implements Game {
 	
 	private static final String TIME_SPENT_PERSISTED_NAME = "toddPuzzleToys";
 	
-	private static final int SHOW_LITE_POPUP_EVERY_MS = 60000*10; // 10 minutes
+	public static boolean unlocked = false;
+	public static boolean showInitMenu = false;
+	
+	private static final int SHOW_LITE_POPUP_EVERY_MS = 60000*20; // 20 minutes
 	
 	private static final int SHOW_ADS_ALWAYS = 60000*60; // 60 minutes
 	public static boolean showAdsAlways=false;
@@ -61,9 +64,12 @@ public class Launcher implements Game {
             return slide().right();
         }
     };
+    HomeScreen home;
 	
   @Override
   public void init() {
+	  unlocked = launcher.isUnlocked();
+	  
 	  width = graphics().screenWidth();  //800
       height = graphics().screenHeight();//480
       
@@ -89,15 +95,16 @@ public class Launcher implements Game {
       width = 1280;
       height = 800;
       */
-      //width = 400; 
+      //width = 320; 
       //height = 240;
       
-      //if (width >= 800) {
+      if (!unlocked) {
       showAdsAlways = true;
-      //}
+      }
       screenDensity = launcher.getScreenDensity();
       gameStarted = false;
 	  
+      if (!unlocked) {
       try {
     	  String item = storage().getItem(TIME_SPENT_PERSISTED_NAME);
     	  if (item!=null) {
@@ -106,6 +113,7 @@ public class Launcher implements Game {
 		} catch (Exception e1) {
 			
 		}
+      }
 		
         //based on the native assets resolution (bg is 320 h 480 w)
 		multHeight = (float)((float)Launcher.height / (float)480);
@@ -116,12 +124,16 @@ public class Launcher implements Game {
     	   graphics().ctx().setSize(width, height);
         }
 	   
-	   HomeScreen home = new HomeScreen(_screens, launcher);
+	   home = new HomeScreen(_screens, launcher);
 	   _screens.push(home);
     
     
        //graphics().rootLayer().add(home.layer);
-	   launcher.showAds();
+	   if (!unlocked) {
+		   launcher.showAds();
+	   } else {
+		   launcher.hideAds();
+	   }
   }
   
 
@@ -132,9 +144,17 @@ public class Launcher implements Game {
 
   @Override
   public void update(float delta) {
+	  if (showInitMenu) {
+		  home.wasHidden(); //reinit the whole screen or in the home.update check and only remove the unlock button
+		  home.wasShown();
+		  showInitMenu = false;
+		  return;
+	  }
 	  if (paused) return;
 	  
 	  if (gameStarted) {
+		  
+		  if (!unlocked) {
 		  playingTime+=delta;
 		  
 		  if (playingTime % 60000 == 0) {
@@ -155,6 +175,8 @@ public class Launcher implements Game {
 			  showAdsAlways = true;
 		  } else if (playingTime > SHOW_ADS_SOMETIMES) {
 			  showAdsSometimes = true;
+		  }
+		  
 		  }
 	  }
 	  

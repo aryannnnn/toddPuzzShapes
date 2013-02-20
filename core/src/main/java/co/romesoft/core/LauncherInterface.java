@@ -13,4 +13,6 @@ public interface LauncherInterface {
 	public void hideAds();
 	
 	public float getScreenDensity();
+	
+	public boolean isUnlocked();
 }

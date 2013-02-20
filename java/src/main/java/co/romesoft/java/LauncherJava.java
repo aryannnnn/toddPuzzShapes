@@ -43,6 +43,14 @@ public class LauncherJava implements LauncherInterface {
   		}
   		Thread.sleep(1000);
   		System.out.println("showLitePopup done");
+  		
+  		game.unlocked = true;
+      	hideAds();
+      	
+      	
+  		if (!game.gameStarted) {
+  			game.showInitMenu = true;
+  		}
   	} catch (InterruptedException e) {
   		game.paused = false;
   	}
@@ -64,7 +72,12 @@ public class LauncherJava implements LauncherInterface {
   	
   }
 
- 
+  @Override
+  public boolean isUnlocked() {
+
+  	
+  	return false;
+  }
 
   @Override
   public float getScreenDensity() {
