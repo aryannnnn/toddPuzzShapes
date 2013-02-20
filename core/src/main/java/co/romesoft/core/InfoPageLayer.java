@@ -12,7 +12,7 @@ import playn.core.Pointer.Event;
 
 
 public class InfoPageLayer {
-	/*
+	
 	public static final String FULL_URL_1 = "market://details?id=co.romesoft.toddlers.puzzle.toysFull";
 	public static final String FULL_URL_2 = "http://play.google.com/store/apps/details?id=co.romesoft.toddlers.puzzle.toysFull";
 	
@@ -21,8 +21,8 @@ public class InfoPageLayer {
 
 	public static final String SEARCH_URL_1 = "market://search?q=pub:romeLab";
 	public static final String SEARCH_URL_2 = "http://play.google.com/store/search?q=pub:romeLab";
-	*/
 	
+	/*
 	public static final String FULL_URL_1 = "amzn://apps/android?p=co.romesoft.toddlers.puzzle.toysFull";
 	public static final String FULL_URL_2 = "http://www.amazon.com/gp/mas/dl/android?p=co.romesoft.toddlers.puzzle.toysFull";
 	
@@ -31,7 +31,7 @@ public class InfoPageLayer {
 
 	public static final String SEARCH_URL_1 = "amzn://apps/android?p=co.romesoft.toddlers.zoo&showAll=1";
 	public static final String SEARCH_URL_2 = "http://www.amazon.com/gp/mas/dl/android?p=co.romesoft.toddlers.zoo&showAll=1";
-	
+	*/
 	
 	Image infoImage;
 	//CanvasImage ci;

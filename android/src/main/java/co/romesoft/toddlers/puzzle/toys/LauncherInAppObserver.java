@@ -8,7 +8,7 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.util.Log;
- 
+/* 
 import com.amazon.inapp.purchasing.BasePurchasingObserver;
 import com.amazon.inapp.purchasing.GetUserIdResponse;
 import com.amazon.inapp.purchasing.GetUserIdResponse.GetUserIdRequestStatus;
@@ -20,49 +20,49 @@ import com.amazon.inapp.purchasing.PurchaseUpdatesResponse;
 import com.amazon.inapp.purchasing.PurchasingManager;
 import com.amazon.inapp.purchasing.Receipt;
 import com.amazon.inapp.purchasing.SubscriptionPeriod;
- 
+ */
 /**
  * Purchasing Observer will be called on by the Purchasing Manager asynchronously.
  * Since the methods on the UI thread of the application, all fulfillment logic is done via an AsyncTask. This way, any
  * intensive processes will not hang the UI thread and cause the application to become
  * unresponsive.
  */
-public class LauncherInAppObserver extends BasePurchasingObserver {
-     
+public class LauncherInAppObserver/* extends BasePurchasingObserver */{
+ /*    
     private static final String TAG = "Amazon-IAP";
     private final LauncherActivity baseActivity;
  
-    /**
+    *//**
      * Creates new instance of the LauncherInAppObserver class.
      *
      * @param buttonClickerActivity Activity context
-     */
+     *//*
     public LauncherInAppObserver(final LauncherActivity buttonClickerActivity) {
         super(buttonClickerActivity);
         this.baseActivity = buttonClickerActivity;
     }
  
-    /**
+    *//**
      * Invoked once the observer is registered with the Purchasing Manager If the boolean is false, the application is
      * receiving responses from the SDK Tester. If the boolean is true, the application is live in production.
      *
      * @param isSandboxMode
      *            Boolean value that shows if the app is live or not.
-     */
+     *//*
     @Override
     public void onSdkAvailable(final boolean isSandboxMode) {
         Log.v(TAG, "onSdkAvailable recieved: Response -" + isSandboxMode);
         PurchasingManager.initiateGetUserIdRequest();
     }
  
-    /**
+    *//**
      * Invoked once the call from initiateGetUserIdRequest is completed.
      * On a successful response, a response object is passed which contains the request id, request status, and the
      * userid generated for your application.
      *
      * @param getUserIdResponse
      *            Response object containing the UserID
-     */
+     *//*
     @Override
     public void onGetUserIdResponse(final GetUserIdResponse getUserIdResponse) {
         Log.v(TAG, "onGetUserIdResponse recieved: Response -" + getUserIdResponse);
@@ -71,7 +71,7 @@ public class LauncherInAppObserver extends BasePurchasingObserver {
         new GetUserIdAsyncTask().execute(getUserIdResponse);
     }
  
-    /**
+    *//**
      * Invoked once the call from initiateItemDataRequest is completed.
      * On a successful response, a response object is passed which contains the request id, request status, and a set of
      * item data for the requested skus. Items that have been suppressed or are unavailable will be returned in a
@@ -79,7 +79,7 @@ public class LauncherInAppObserver extends BasePurchasingObserver {
      *
      * @param itemDataResponse
      *            Response object containing a set of purchasable/non-purchasable items
-     */
+     *//*
     @Override
     public void onItemDataResponse(final ItemDataResponse itemDataResponse) {
         Log.v(TAG, "onItemDataResponse recieved");
@@ -88,14 +88,14 @@ public class LauncherInAppObserver extends BasePurchasingObserver {
         new ItemDataAsyncTask().execute(itemDataResponse);
     }
  
-    /**
+    *//**
      * Is invoked once the call from initiatePurchaseRequest is completed.
      * On a successful response, a response object is passed which contains the request id, request status, and the
      * receipt of the purchase.
      *
      * @param purchaseResponse
      *            Response object containing a receipt of a purchase
-     */
+     *//*
     @Override
     public void onPurchaseResponse(final PurchaseResponse purchaseResponse) {
         Log.v(TAG, "onPurchaseResponse recieved");
@@ -103,9 +103,9 @@ public class LauncherInAppObserver extends BasePurchasingObserver {
         new PurchaseAsyncTask().execute(purchaseResponse);
     }
  
-    /**
+    *//**
      * Helper method to print out relevant receipt information to the log.
-     */
+     *//*
     private void printReceipt(final Receipt receipt) {
         Log.v(
             TAG,
@@ -113,9 +113,9 @@ public class LauncherInAppObserver extends BasePurchasingObserver {
                 receipt.getSku(), receipt.getSubscriptionPeriod()));
     }
  
-    /**
+    *//**
      * Helper method to retrieve the correct key to use with our shared preferences
-     */
+     *//*
     private String getKey(final String sku) {
         if (sku.equals(baseActivity.SKU_CONSUMABLE)) {
             return LauncherActivity.UNLOCKED;
@@ -133,10 +133,10 @@ public class LauncherInAppObserver extends BasePurchasingObserver {
         return getSharedPreferencesForCurrentUser().edit();
     }
  
-    /**
+    *//**
      * Started when the Observer receives a GetUserIdResponse. The Shared Preferences file for the returned user id is
      * accessed.
-     */
+     *//*
     private class GetUserIdAsyncTask extends AsyncTask<GetUserIdResponse, Void, Boolean> {
  
         @Override
@@ -156,11 +156,11 @@ public class LauncherInAppObserver extends BasePurchasingObserver {
         }
     }
  
-    /**
+    *//**
      * Started when the observer receives an Item Data Response.
      * Takes the items and display them in the logs. You can use this information to display an in game
      * storefront for your IAP items.
-     */
+     *//*
     private class ItemDataAsyncTask extends AsyncTask<ItemDataResponse, Void, Void> {
         @Override
         protected Void doInBackground(final ItemDataResponse... params) {
@@ -191,10 +191,10 @@ public class LauncherInAppObserver extends BasePurchasingObserver {
         }
     }
  
-    /**
+    *//**
      * Started when the observer receives a Purchase Response
      * Once the AsyncTask returns successfully, the UI is updated.
-     */
+     *//*
     private class PurchaseAsyncTask extends AsyncTask<PurchaseResponse, Void, Boolean> {
  
         @Override
@@ -206,9 +206,9 @@ public class LauncherInAppObserver extends BasePurchasingObserver {
             final SharedPreferences.Editor editor = getSharedPreferencesEditor();
             switch (purchaseResponse.getPurchaseRequestStatus()) {
             case SUCCESSFUL:
-                /**
+                *//**
                  * You can verify the receipt and fulfill the purchase on successful responses.
-                 */
+                 *//*
                 final Receipt receipt = purchaseResponse.getReceipt();
                 String key = "";
                 switch (receipt.getItemType()) {
@@ -221,19 +221,19 @@ public class LauncherInAppObserver extends BasePurchasingObserver {
                 printReceipt(purchaseResponse.getReceipt());
                 return true;
             case FAILED:
-                /**
+                *//**
                  * If the purchase failed for some reason, (The customer canceled the order, or some other
                  * extraneous circumstance happens) the application ignores the request and logs the failure.
-                 */
+                 *//*
                 Log.v(TAG, "Failed purchase for request" + baseActivity.requestIds.get(purchaseResponse.getRequestId()));
                 //baseActivity.showProblemInAppDialog();
                 return false;
             case INVALID_SKU:
-                /**
+                *//**
                  * If the sku that was purchased was invalid, the application ignores the request and logs the failure.
                  * This can happen when there is a sku mismatch between what is sent from the application and what
                  * currently exists on the dev portal.
-                 */
+                 *//*
                 Log.v(TAG, "Invalid Sku for request " + baseActivity.requestIds.get(purchaseResponse.getRequestId()));
                 //baseActivity.showProblemInAppDialog();
                 return false;
@@ -251,6 +251,6 @@ public class LauncherInAppObserver extends BasePurchasingObserver {
             	//baseActivity.showProblemInAppDialog();
             }
         }
-    }
+    }*/
 }
                         
