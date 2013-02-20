@@ -124,7 +124,7 @@ public class Security {
              * Generally, encryption keys / passwords should only be kept in memory
              * long enough to perform the operation they need to perform.
              */
-            String base64EncodedPublicKey = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqVyHuJnPg3BVr86BTA7nzVdYWfrXIMRfnUaDufLqxf1xklNvY7JDh2x8Lk8kBFW8uG1+uyLZS7wEilJDpeYfB9cOfF6McgmSMHAoqDbTyKuZy4Hgl7swrG/nSNorARkXCXpJT7ePsxyHjcnlAh32A4bXv+YxkcfiGsFee0+EiOhwIFR32n+XiXvVwF3EP4fSHJ6qWmizCKy/2eTqK2kbGNuTey94xoO+gOWNY8prPRDxgsMpW1f2GxPYP6UzDoiatyfg3rgpiNrugz6zgaWzM4oRj5HidItbw2OWxcSFfZ+/a3PQ99xsXCiW2xNhDPh2LFmhmqoh7P7k3u9NlszoSQIDAQAB";
+            String base64EncodedPublicKey = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAh8KGAb8BzBh2EenGtEW8K8jiqr6Z06/3D8wvd9JqArBbDnYnd2KsEdpGJLjFO/DwL6HXRMfDoi0l0zHOaHRRS9M8UaohybLeBELDz92+BCRoEEUmMc81U+BQ6+CwmPBDZrARQ36IDXjLOHdTRgwoWUPkNCMRYaiCUtoDhvtPzq3RgckwkLHogWODsVWR+Gsq3VsJbV1ZymzJ2adXgrDY9biZ+gX+pSf6WRtNcX7eFBzsZOH1bXGNsi/PPGdiOaybbR/5LpGz58w2uGNCS2X++mm5Ld2BCWz+iQcGJWvYThsOluQ17vq10SEUmTuV6P681c0bYlJezN8qf3M225VgFwIDAQAB";
             PublicKey key = Security.generatePublicKey(base64EncodedPublicKey);
             verified = Security.verify(key, signedData, signature);
             if (!verified) {
