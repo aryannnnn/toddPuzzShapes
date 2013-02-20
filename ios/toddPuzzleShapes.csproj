@@ -110,30 +110,7 @@
     <None Include="admob\testAdsInappViewController.cs">
       <Visible>False</Visible>
     </None>
-    <None Include="inapp\CustomPaymentObserver.cs">
-      <Visible>False</Visible>
-    </None>
-    <None Include="inapp\InAppPurchaseManager.cs">
-      <Visible>False</Visible>
-    </None>
-    <None Include="inapp\InAppPurchaseSample.zip">
-      <Visible>False</Visible>
-    </None>
-    <None Include="inapp\NonConsumableViewController.cs">
-      <Visible>False</Visible>
-    </None>
-    <None Include="inapp\PhotoFilterManager.cs">
-      <Visible>False</Visible>
-    </None>
-    <None Include="inapp\SKProductExtension.cs">
-      <Visible>False</Visible>
-    </None>
-    <None Include="inapp\TODO.txt">
-      <Visible>False</Visible>
-    </None>
-    <None Include="inapp\VerificationController.cs">
-      <Visible>False</Visible>
-    </None>
+   
     <None Include="TODO.txt" />
     <None Include="toddPuzzleShapes.userprefs">
       <Visible>False</Visible>

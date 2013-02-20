@@ -59,8 +59,10 @@ namespace NonConsumables {
 			}
 			NSNotificationCenter.DefaultCenter.PostNotificationName(InAppPurchaseManagerProductsFetchedNotification,this,userInfo);
 
-			foreach (string invalidProductId in response.InvalidProducts) {
-				Console.WriteLine("Invalid product id: " + invalidProductId );
+			if (response.InvalidProducts != null) {
+				foreach (string invalidProductId in response.InvalidProducts) {
+					Console.WriteLine("Invalid product id: " + invalidProductId );
+				}
 			}
 		}
 
@@ -105,6 +107,8 @@ namespace NonConsumables {
 				Console.WriteLine("User CANCELLED FailedTransaction Code=" + transaction.Error.Code + " " + transaction.Error.LocalizedDescription);
 			else // error!
 				Console.WriteLine("FailedTransaction Code=" + transaction.Error.Code + " " + transaction.Error.LocalizedDescription);
+			
+			// FailedTransaction Code=0 Impossibile connettersi a iTunes Store
 			
 			FinishTransaction(transaction,false);
 		}

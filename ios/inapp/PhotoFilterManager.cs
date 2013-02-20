@@ -2,6 +2,7 @@ using System;
 using MonoTouch.CoreImage;
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
+using co.romesoft;
 
 namespace NonConsumables {
 	// WARNING: this is a trivial example of tracking non-consumable
@@ -24,19 +25,29 @@ namespace NonConsumables {
 		/// of technical knowledge). 
 		/// </remarks>
 		public static void Purchase (string productId) {
+			/*
 			var key = new NSString(productId);
 			NSUserDefaults.StandardUserDefaults.SetBool(true, key);
 			NSUserDefaults.StandardUserDefaults.Synchronize ();
+			*/
+			
+			co.romesoft.AppDelegate.pf.storage().setItem(AppDelegate.UNLOCKED, AppDelegate.unlockVal);
+			
 		}
+		/*
 		public static bool HasPurchased (string productId) {
+		
 			var key = new NSString(productId);
 			return NSUserDefaults.StandardUserDefaults.BoolForKey (key);
+			
 		}
+		*/
 
 		/// <summary>
 		/// Purchaseable feature. This function can't be called until the 
 		/// user has purchased the Sepia Filter in-app product.
 		/// </summary>
+		/*
 		public static void ApplySepia(string imagePath, UIImageView imgview)
 		{	
 			var uiimage = UIImage.FromFile (imagePath);
@@ -73,5 +84,6 @@ namespace NonConsumables {
 
 			imgview.Image = ui;
 		}
+		*/
 	}
 }
