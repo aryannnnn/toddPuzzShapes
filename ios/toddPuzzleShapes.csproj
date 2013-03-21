@@ -110,14 +110,25 @@
     <None Include="admob\testAdsInappViewController.cs">
       <Visible>False</Visible>
     </None>
-   
     <None Include="TODO.txt" />
     <None Include="toddPuzzleShapes.userprefs">
+      <Visible>False</Visible>
+    </None>
+    <None Include="inapp\InAppPurchaseSample.zip">
+      <Visible>False</Visible>
+    </None>
+    <None Include="inapp\TODO.txt">
       <Visible>False</Visible>
     </None>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Main.cs" />
+    <Compile Include="inapp\CustomPaymentObserver.cs" />
+    <Compile Include="inapp\InAppPurchaseManager.cs" />
+    <Compile Include="inapp\NonConsumableViewController.cs" />
+    <Compile Include="inapp\PhotoFilterManager.cs" />
+    <Compile Include="inapp\SKProductExtension.cs" />
+    <Compile Include="inapp\VerificationController.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
@@ -340,6 +351,8 @@
     <Content Include="assets\snd\spring7.mp3" />
     <Content Include="assets\snd\spring8.mp3" />
     <Content Include="assets\snd\traffic.mp3" />
+    <Content Include="assets\images\infoPage_FULL.png" />
+    <Content Include="assets\images\unlock_button.png" />
   </ItemGroup>
   <ItemGroup>
     <ITunesArtwork Include="iTunesArtwork%402x" />
