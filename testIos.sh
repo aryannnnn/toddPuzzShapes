@@ -1,5 +1,5 @@
 #!/bin/bash
 
-mvn clean -Pios package
+mvn -o clean -Pios package
 
 open ios/toddPuzzleShapes.sln
