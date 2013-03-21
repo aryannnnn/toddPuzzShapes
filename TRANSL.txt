@@ -46,3 +46,26 @@ Your child will admire every kind of toy and will listen funny sound effects!
 
 
 toy,toys,puzzle,puzzles,kid,kids,truck,teddy bear,ball,guitar,car,train,boat,drums,toddler,toddlers
+
+กีตาร์ของเล่น, ของเล่น, ปริศนา, ปริศนา, เด็ก, เด็ก, รถบรรทุก, ตุ๊กตาหมี, ลูก, เด็กวัยหัดเดินรถยนต์รถไฟเรือกลองเดินเตาะแตะ
+dan
+legetøj,puslespil,kid,børn,lastbil,bamse,bold,guitar,bil,tog, båd, trommer, buksetrold, småbørn
+ola
+speelgoed,puzzel,puzzels,kind,kinderen,vrachtwagen,teddybeer,bal,gitaar,auto,trein,peuter,peuters
+fin
+lelu,palapeli,palapelit,kids,kuorma,nallekarhu,pallo,kitara,auto,juna,laiva,rummut,taapero,leikki
+indo
+mainan,puzzle,teka-teki,anak,anak-anak,truk,boneka beruang,bola,gitar,mobil,kereta api,kapal,balita
+mal
+mainan,teka-teki,kanak-kanak,anak-anak,trak,bola,gitar,kereta,kereta api,bot,gendang,anak kecil
+nor
+leketøy,leker,puslespill,kid,kids,lastebil,bamse,ball,gitar,bil,tog,båt,trommer,pjokk,smårollinger
+sve
+leksak,leksaker,pussel,unge,lurar,lastbil,nalle,boll,gitarr,bil,tåg,båt,trummor,barn,småbarn
+tur
+oyuncak,bulmaca,çocuk,çocuklar,kamyon,oyuncak ayı,top,gitar,araba,tren,gemi,davul,çocuklar
+vie
+đồ chơi,câu đố,đứa trẻ,trẻ em,xe tải,gấu bông,quả bóng,xe,tàu,thuyền,trống,chập chững biết đi
+gr
+παιχνίδι,παιχνίδια,παζλ,παιδί,παιδιά,φορτηγό,αρκουδάκι,μπάλα,κιθάρα,αυτοκίνητο,τρένο,πλοίο,τύμπανα
+
