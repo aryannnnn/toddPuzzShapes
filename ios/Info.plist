@@ -15,16 +15,12 @@
 		<string>50_FREE.png</string>
 		<string>100_FREE.png</string>
 	</array>
-	
 	<key>CFBundleIdentifier</key>
 	<string>co.romesoft.toddlers.puzzle.toys</string>
-	
 	<key>CFBundleVersion</key>
-	<string>1.0.2</string>
-	
+	<string>1.0.3</string>
 	<key>MinimumOSVersion</key>
 	<string>5.0</string>
-	
 	<key>UIDeviceFamily</key>
 	<array>
 		<integer>1</integer>
@@ -34,17 +30,15 @@
 	<true/>
 	<key>UIStatusBarHidden</key>
 	<true/>
-	
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
-	<string>UIInterfaceOrientationLandscapeLeft</string>
-	<string>UIInterfaceOrientationLandscapeRight</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
-	<string>UIInterfaceOrientationLandscapeLeft</string>
-	<string>UIInterfaceOrientationLandscapeRight</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 </dict>
 </plist>
